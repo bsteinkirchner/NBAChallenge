@@ -1,15 +1,15 @@
 import React from "react";
 import Pages from "./pages/Pages";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
       <h1>NBA Challenge</h1>
-      <BrowserRouter>
+      <HashRouter>
         <Pages />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }

@@ -25,7 +25,7 @@ function NbaTeams() {
         {nbaTeams.map((data) => {
             return (
                 <Card key={data.id}>
-                    <Link to={`/nba-challenge/TeamGames/${data.id}`}>
+                    <Link to={`/TeamGames/${data.id}`}>
                         <h2>{data.full_name}</h2>
                         <h3>{data.conference}</h3>
                         <h4>{data.division}</h4>
