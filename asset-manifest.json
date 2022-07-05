@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.21cbd711.css",
+    "main.js": "/static/js/main.e41a75d5.js",
+    "static/media/markus-spiske-BfphcCvhl6E-unsplash.jpg": "/static/media/markus-spiske-BfphcCvhl6E-unsplash.8421b5fda0f54dd27141.jpg",
+    "index.html": "/index.html",
+    "main.21cbd711.css.map": "/static/css/main.21cbd711.css.map",
+    "main.e41a75d5.js.map": "/static/js/main.e41a75d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21cbd711.css",
+    "static/js/main.e41a75d5.js"
+  ]
+}
