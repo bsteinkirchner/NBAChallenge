@@ -13,8 +13,8 @@ function TeamGames() {
   }
 
   useEffect(() => {
-    fetchGames(id.data);
-  }, [id.data]);
+    fetchGames(id);
+  }, [id]);
 
   return (
     <Wrapper>
@@ -30,7 +30,7 @@ function TeamGames() {
         </thead>
           {games.map((object) =>{
             return (
-            <tbody>
+            <tbody key={object.id}>
               <tr key={object.id}>
                 <td>{object.home_team.full_name}</td>
                 <td>{object.home_team_score} to {object.visitor_team_score}</td>

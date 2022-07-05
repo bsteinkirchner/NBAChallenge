@@ -20,6 +20,7 @@ function NbaTeams() {
 
   return (
     <div>
+        <p className="introp">Click a team to see the 2012 season and scores</p>
         <Wrapper>
         {nbaTeams.map((data) => {
             return (
@@ -46,8 +47,8 @@ const Wrapper = styled.div`
     justify-content: space-around;
 `;
 const Card = styled.div`
-    width: 18rem;
-    border: 10px black solid;
+    width: 15rem;
+    border: 5px white solid;
     border-radius: 2rem;
     position: relative;
     padding: 10px;
@@ -55,6 +56,7 @@ const Card = styled.div`
     margin: 20px;
     text-align: center;
     justify-content: center;
+    font-weight:bold;
     a{
         text-decoration: none;
         color:white;
