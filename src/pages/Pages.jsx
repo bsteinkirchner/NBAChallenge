@@ -7,7 +7,7 @@ function Pages() {
   return (
     <div>
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/NBAChallenge/" element={<Home/>}/>
             <Route path="/TeamGames/:id" element={<TeamGames/>}/>
         </Routes>
     </div>
