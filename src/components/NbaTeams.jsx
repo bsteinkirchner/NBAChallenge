@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+
 function NbaTeams() {
 
     const [nbaTeams, setNbaTeams] = useState([]);
@@ -16,16 +17,17 @@ function NbaTeams() {
         setNbaTeams(teamData.data);
         console.log(teamData.data);
     }
+
   return (
     <div>
         <Wrapper>
         {nbaTeams.map((data) => {
             return (
                 <Card key={data.id}>
-                    <Link to={"seasons"+data.id}>
+                    <Link to={`/TeamGames/${data.id}`}>
                         <h2>{data.full_name}</h2>
-                        <h3>{data.division}</h3>
-                        <h4>{data.conference}</h4>
+                        <h3>{data.conference}</h3>
+                        <h4>{data.division}</h4>
                     </Link>
                 </Card>
             );
@@ -45,10 +47,17 @@ const Wrapper = styled.div`
 `;
 const Card = styled.div`
     width: 18rem;
-    border: 1px black solid;
+    border: 10px black solid;
     border-radius: 2rem;
     position: relative;
     padding: 10px;
     display: flex;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    a{
+        text-decoration: none;
+        color:white;
+    }
 `;
 export default NbaTeams;

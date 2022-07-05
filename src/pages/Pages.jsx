@@ -8,7 +8,7 @@ function Pages() {
     <div>
         <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="/teamgames/:id" element={<TeamGames/>}/>
+            <Route path="/TeamGames/:id" element={<TeamGames/>}/>
         </Routes>
     </div>
   )
