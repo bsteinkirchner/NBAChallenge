@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/NBAChallenge/static/css/main.48c5a710.css",
-    "main.js": "/NBAChallenge/static/js/main.7caf4d46.js",
+    "main.js": "/NBAChallenge/static/js/main.b5c0a985.js",
     "static/media/markus-spiske-BfphcCvhl6E-unsplash.jpg": "/NBAChallenge/static/media/markus-spiske-BfphcCvhl6E-unsplash.8421b5fda0f54dd27141.jpg",
     "index.html": "/NBAChallenge/index.html",
     "main.48c5a710.css.map": "/NBAChallenge/static/css/main.48c5a710.css.map",
-    "main.7caf4d46.js.map": "/NBAChallenge/static/js/main.7caf4d46.js.map"
+    "main.b5c0a985.js.map": "/NBAChallenge/static/js/main.b5c0a985.js.map"
   },
   "entrypoints": [
     "static/css/main.48c5a710.css",
-    "static/js/main.7caf4d46.js"
+    "static/js/main.b5c0a985.js"
   ]
 }
