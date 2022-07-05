@@ -7,8 +7,8 @@ function Pages() {
   return (
     <div>
         <Routes>
-            <Route path="/nba-challenge" exact component={<Home/>}/>
-            <Route path="/nba-challenge/TeamGames/:id" exact component={<TeamGames/>}/>
+            <Route exact path="/nba-challenge" element={<Home/>}/>
+            <Route exact path="/nba-challenge/TeamGames/:id" element={<TeamGames/>}/>
         </Routes>
     </div>
   )
