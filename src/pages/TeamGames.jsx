@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
+import Table from 'react-bootstrap/Table'
 import styled from "styled-components";
 
 function TeamGames() {
@@ -16,67 +17,36 @@ function TeamGames() {
   }, [id.data]);
 
   return (
-      <Wrapper>
-        <Head>2012 season</Head>
-          {games.map((object) => {
-              return (
-                <Container key={object.id}>
-                  <Top><span>{object.date}</span></Top>
-                  <LeftSide>
-                    <h2>{object.home_team.full_name}</h2>
-                  </LeftSide>
-                  <Middle>
-                    <h3>{object.home_team_score} to {object.visitor_team_score}</h3>
-                  </Middle>
-                  <RightSide>
-                    <h2>{object.visitor_team.full_name}</h2>
-                  </RightSide>
-                </Container>
-              );
+    <Wrapper>
+      <h2 className="tablehead">2012 Season Games</h2>
+      <Table>
+        <thead>
+          <tr>
+            <th>Home</th>
+            <th>Score</th>
+            <th>Visitor</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+          {games.map((object) =>{
+            return (
+            <tbody>
+              <tr key={object.id}>
+                <td>{object.home_team.full_name}</td>
+                <td>{object.home_team_score} to {object.visitor_team_score}</td>
+                <td>{object.visitor_team.full_name}</td>
+                <td>{object.date}</td>
+              </tr>
+            </tbody>
+            )
           })}
-      </Wrapper>
-    )
-  }
- const Wrapper = styled.div`
-  margin: auto;
- `;
-const Container = styled.div`
-  width: 100%;
-  display: flex;
+      </Table>
+    </Wrapper>
+  )
+}
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `;
-
-const Top = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 50px;
-  span{
-    font-weight: bold;
-  }
-`;
-const LeftSide = styled.div`
-  flex-grow: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-const RightSide = styled.div`
-  display: flex;
-  flex-grow: 2;
-  flex-direction: column;
-  align-items: center;
-`;
-const Middle = styled.div`
-  flex-grow: 1;
-  display: flex;
-  align-items: center
-  font-size: 26px;
-  justify-content: center
-`;
- const Head = styled.h1`
-  display: flex;
-  justify-content: center;
- `
-
-  export default TeamGames;
+export default TeamGames;
