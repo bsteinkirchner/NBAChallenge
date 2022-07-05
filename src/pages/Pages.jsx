@@ -7,7 +7,7 @@ function Pages() {
   return (
     <div>
         <Routes>
-            <Route path="/NBAChallenge/" element={<Home/>}/>
+            <Route path="https://bsteinkirchner.github.io/NBAChallenge/" element={<Home/>}/>
             <Route path="/TeamGames/:id" element={<TeamGames/>}/>
         </Routes>
     </div>
